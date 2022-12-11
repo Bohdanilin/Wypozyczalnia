@@ -1,7 +1,7 @@
 using System;
 namespace Wypozyczalnia
 {
-    public static class Message
+    public class Message
     {
         public void WelcomeScreen()
         {
