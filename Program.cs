@@ -6,6 +6,6 @@ namespace Wypozyczalnia
         var Message = new Message();
 
         FuelScreen();
-
+        int a = 0;
     }
 }
