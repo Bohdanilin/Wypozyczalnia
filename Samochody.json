@@ -1,0 +1,82 @@
+[
+    {
+        "Id": "1",
+        "Marka": "Škoda Citigo",
+        "Segment": "mini",
+        "FuelType": "benzyna",
+        "Price": 70.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "2",
+        "Marka": "Toyota Aygo",
+        "Segment": "mini",
+        "FuelType": "benzyna",
+        "Price": 90.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "3",
+        "Marka": "Fiat 500",
+        "Segment": "mini",
+        "FuelType": "elektryczny",
+        "Price": 110.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "4",
+        "Marka": "Ford Focus",
+        "Segment": "kompakt",
+        "FuelType": "diesel",
+        "Price": 160.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "5",
+        "Marka": "Kia Ceed",
+        "Segment": "kompakt",
+        "FuelType": "benzyna",
+        "Price": 150.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "6",
+        "Marka": "Volkswagen Golf",
+        "Segment": "kompakt",
+        "FuelType": "benzyna",
+        "Price": 160.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "7",
+        "Marka": "Hyundai Kona Electric",
+        "Segment": "kompakt",
+        "FuelType": "elektryczny",
+        "Price": 180.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "8",
+        "Marka": "Audi A6 Allroad",
+        "Segment": "premium",
+        "FuelType": "diesel",
+        "Price": 290.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "9",
+        "Marka": "Mercedes E270 AMG",
+        "Segment": "premium",
+        "FuelType": "benzyna",
+        "Price": 320.00,
+        "Status": "dostępny"
+    },
+    {
+        "Id": "10",
+        "Marka": "Tesla Model S",
+        "Segment": "premium",
+        "FuelType": "elektryczny",
+        "Price": 350.00,
+        "Status": "dostępny"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Id": "1",
+        "FirstName": "Jan",
+        "LastName": "Nowak",
+        "DateDrivingLicense": "04.03.2021"
+     },
+     {
+        "Id": "2",
+        "FirstName": "Agnieszka",
+        "LastName": "Kowalska",
+        "DateDrivingLicense": "15.01.1999"
+     },
+     {
+        "Id": "3",
+        "FirstName": "Robert",
+        "LastName": "Lewandowski",
+        "DateDrivingLicense": "18.12.2010"
+     },
+     {
+        "Id": "4",
+        "FirstName": "Zofia",
+        "LastName": "Plucińska",
+        "DateDrivingLicense": "29.04.2020"
+     },
+     {
+        "Id": "5",
+        "FirstName": "Grzegorz",
+        "LastName": "Braun",
+        "DateDrivingLicense": "12.07.2015"
+     }
+]
