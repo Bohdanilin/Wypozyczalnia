@@ -1,0 +1,15 @@
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/bin/Debug/net6.0/Wypozyczalnia
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/bin/Debug/net6.0/Wypozyczalnia.deps.json
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/bin/Debug/net6.0/Wypozyczalnia.runtimeconfig.json
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/bin/Debug/net6.0/Wypozyczalnia.dll
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/bin/Debug/net6.0/Wypozyczalnia.pdb
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.csproj.AssemblyReference.cache
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.GeneratedMSBuildEditorConfig.editorconfig
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.AssemblyInfoInputs.cache
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.AssemblyInfo.cs
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.csproj.CoreCompileInputs.cache
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.dll
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/refint/Wypozyczalnia.dll
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.pdb
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/Wypozyczalnia.genruntimeconfig.cache
+/Users/apple/Desktop/git/GitHub/Wypozyczalnia/obj/Debug/net6.0/ref/Wypozyczalnia.dll

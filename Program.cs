@@ -1,11 +1,4 @@
-﻿using System;
-namespace Wypozyczalnia
-{
-    class Program : Message
-    {
-        var Message = new Message();
+﻿using Wypozyczalnia;
+var message = new Message();
+message.FuelScreen();
 
-        FuelScreen();
-        int a = 0;
-    }
-}
