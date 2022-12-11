@@ -1,4 +1,5 @@
 ﻿using Wypozyczalnia;
 var message = new Message();
-message.FuelScreen();
-
+message.WelcomeScreen();
+if (message.user_answer == "1")
+    message.DisplayClients();
