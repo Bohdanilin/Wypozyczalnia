@@ -72,13 +72,13 @@ namespace Wypozyczalnia
         }
 
         //    List<string>? Clients = new List<string>; 
-        public List<Clients>? AllClients { get; set; }
+        public List<Klient>? AllClients { get; set; }
 
         private void CreateClients()
         {
-            var path = $"{Directory.GetCurrentDirectory()}\\clients.json";
+            var path = $"{Directory.GetCurrentDirectory()}//clients.json";
             var json = File.ReadAllText(path);
-            AllClients = JsonConvert.DeserializeObject<List<Clients>>(json);
+            AllClients = JsonConvert.DeserializeObject<List<Klient>>(json);
         }
         public void DisplayClients()
         {
