@@ -6,6 +6,11 @@ namespace Wypozyczalnia
 {
     public class Message
     {
+
+        public Message()
+        {
+            CreateClients();
+        }
         public string? user_answer { get; set; }
 
         public void WelcomeScreen()
@@ -72,18 +77,18 @@ namespace Wypozyczalnia
         }
 
         //    List<string>? Clients = new List<string>; 
-        public List<Klient>? AllClients { get; set; }
+        public List<Klient> AllClients { get; set; }
 
         private void CreateClients()
         {
-            var path = $"{Directory.GetCurrentDirectory()}//clients.json";
+            var path = $"{Directory.GetCurrentDirectory()}\\clients.json";
             var json = File.ReadAllText(path);
             AllClients = JsonConvert.DeserializeObject<List<Klient>>(json);
         }
         public void DisplayClients()
         {
             Console.WriteLine("Id | Imię i nazwisko | Data wydania prawa jazdy");
-            foreach (var c in AllClients!)
+            foreach (var c in AllClients)
             {
                 Console.WriteLine(c.Id + " | " + c.FirstName + c.LastName + " | " + c.DateDrivingLicense);
             }
