@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6Pd1IXLkSmf1HMDE6QQef1iy3Qxlf9aHiTBB1oci3ruHG7mQ8Wl/i8HNJIMCV5SumTDokHynPYLBJA8fa33BHA==",
+  "dgSpecHash": "8Em0arASy+PvywrlTpBZgB4cEbTiH/vEd0jI40KPYcWSdaKQsVLK1nBA0PA6oWiCGRLDYuZJBBzx6VXY78aWHA==",
   "success": true,
-  "projectFilePath": "D:\\Moje_projekty\\Wypozyczalnia\\Wypozyczalnia.csproj",
+  "projectFilePath": "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\Wypozyczalnia.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Professional\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\ilinb\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Moje_projekty\\Wypozyczalnia\\Wypozyczalnia.csproj": {}
+    "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\Wypozyczalnia.csproj": {}
   },
   "projects": {
-    "D:\\Moje_projekty\\Wypozyczalnia\\Wypozyczalnia.csproj": {
+    "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\Wypozyczalnia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Moje_projekty\\Wypozyczalnia\\Wypozyczalnia.csproj",
+        "projectUniqueName": "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\Wypozyczalnia.csproj",
         "projectName": "Wypozyczalnia",
-        "projectPath": "D:\\Moje_projekty\\Wypozyczalnia\\Wypozyczalnia.csproj",
-        "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "D:\\Moje_projekty\\Wypozyczalnia\\obj\\",
+        "projectPath": "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\Wypozyczalnia.csproj",
+        "packagesPath": "C:\\Users\\ilinb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilinb\\Documents\\GitHub\\Wypozyczalnia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ilinb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

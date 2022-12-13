@@ -1,6 +1,6 @@
 namespace Wypozyczalnia
 {
-    public class Klient
+    public class Client
     {
         public string Id { get; set; }
         public string FirstName { get; set; }
@@ -9,6 +9,8 @@ namespace Wypozyczalnia
         //public string FullName { get { return FirstName + LastName; } }
 
         public string DateDrivingLicense { get; set; }
+
+
 
 
     }

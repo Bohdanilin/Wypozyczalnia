@@ -1,17 +1,20 @@
 using Newtonsoft.Json;
 using System;
+using System.IO;
 
 
 namespace Wypozyczalnia
 {
     public class Message
     {
-
         public Message()
         {
             CreateClients();
+            CreateCars();
         }
-        public string? user_answer { get; set; }
+
+        public string user_answer { get; set; }
+
 
         public void WelcomeScreen()
         {
@@ -22,6 +25,7 @@ namespace Wypozyczalnia
             Console.WriteLine("3 => ZAKOŃCZ PROGRAM");
             Console.WriteLine("WYBIERZ 1, 2 LUB 3:");
             user_answer = Console.ReadLine();
+
         }
         public void IdClientScreen()
         {
@@ -38,6 +42,7 @@ namespace Wypozyczalnia
             Console.WriteLine("3. premium");
             Console.WriteLine("PODAJ SEGMENT SAMOCHODU:");
             user_answer = Console.ReadLine();
+
         }
         public void FuelScreen()
         {
@@ -48,12 +53,14 @@ namespace Wypozyczalnia
             Console.WriteLine("PODAJ PREFEROWANY RODZAJ PALIWA:");
             user_answer = Console.ReadLine();
 
+
         }
         public void TermScreen()
         {
             Console.Clear();
             Console.WriteLine("PODAJ ILOŚĆ DNI WYNAJMU POJAZDU:");
             user_answer = Console.ReadLine();
+
         }
         public void AgreementScreen()
         {
@@ -76,25 +83,39 @@ namespace Wypozyczalnia
             Console.ForegroundColor = ConsoleColor.White;
         }
 
-        //    List<string>? Clients = new List<string>; 
-        public List<Klient> AllClients { get; set; }
+        public List<Car> AllCars { get; set; }
+        public List<Client> AllClients { get; set; }
 
         private void CreateClients()
         {
-            var path = $"{Directory.GetCurrentDirectory()}\\clients.json";
+            var path = $"{Directory.GetCurrentDirectory()}//clients.json";
             var json = File.ReadAllText(path);
-            AllClients = JsonConvert.DeserializeObject<List<Klient>>(json);
+            AllClients = JsonConvert.DeserializeObject<List<Client>>(json);
         }
-        public void DisplayClients()
+        private void CreateCars()
         {
+            var path = $"{Directory.GetCurrentDirectory()}//cars.json";
+            var json = File.ReadAllText(path);
+            AllCars = JsonConvert.DeserializeObject<List<Car>>(json);
+        }
+        public void DisplayLists()
+        {
+            Console.Clear();
+            Console.WriteLine("LISTA KLIENTÓW:");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Id | Imię i nazwisko | Data wydania prawa jazdy");
-            foreach (var c in AllClients)
+            foreach (var clients in AllClients)
             {
-                Console.WriteLine(c.Id + " | " + c.FirstName + c.LastName + " | " + c.DateDrivingLicense);
+                Console.WriteLine(clients.Id + " | " + clients.FirstName + " " + clients.LastName + " | " + clients.DateDrivingLicense);
+            }
+            Console.WriteLine("");
+            Console.WriteLine("LISTA SAMOCHODÓW:");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Id | Model | Segment | Rodzaj paliwa | Cena za dobę");
+            foreach (var cars in AllCars)
+            {
+                Console.WriteLine(cars.Id + " | " + cars.Marka + " | " + cars.Segment + " | " + cars.FuelType + " | " + cars.Price);
             }
         }
-
-
-
     }
 }
