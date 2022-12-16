@@ -1,29 +1,82 @@
 ﻿using Wypozyczalnia;
 var message = new Message();
 
+
 while (true)
 {
     message.WelcomeScreen();
 
-    if (message.user_answer == "1")
+    if (message.answer == "1")
     {
         message.DisplayLists();
     }
-    if (message.user_answer == "2")
+
+    else if (message.answer == "2")
     {
         message.IdClientScreen();
 
-        foreach (var y in message.AllClients) ;
 
-        if (message.user_answer == y.Id)
-        {
-            Console.Clear();
-            var y1 = y;
-            System.Console.WriteLine(y.FirstName);
+        foreach (var y in message.AllClients)
 
-        }
+            if (message.answer_id == y.Id)
+            {
+                message.SegmentScreen();
+
+                if (int.TryParse(message.answer_seg, out int x) && x > 0 && x < 4)
+                {
+                    if (message.answer_seg == "1")
+                    {
+                        message.answer_seg = "mini";
+
+                    }
+                    if (message.answer_seg == "2")
+                    {
+                        message.answer_seg = "kompakt";
+
+                    }
+                    if (message.answer_seg == "3")
+                    {
+                        message.answer_seg = "premium";
+                    }
+                    message.FuelScreen();
+                    if (int.TryParse(message.answer_fuel, out int z) && z > 0 && z < 4)
+                    {
+                        if (message.answer_fuel == "1")
+                        {
+                            message.answer_fuel = "benzyna";
+                        }
+                        if (message.answer_fuel == "2")
+                        {
+                            message.answer_fuel = "elektryczny";
+                        }
+                        if (message.answer_fuel == "3")
+                        {
+                            message.answer_fuel = "diesel";
+                        }
+                        message.TermScreen();
+                        if (message.time_rent > 0)
+                        {
+                            message.AgreementScreen();
+
+
+                        }
+
+
+                    }
+
+                }
+            }
+        break;
 
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+
