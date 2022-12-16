@@ -71,24 +71,30 @@ namespace Wypozyczalnia
         }
         public void AgreementScreen()
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("UMOWA WYNAJMU POJAZDU");
-            Console.WriteLine("DATA ZAWARCIA: " + date_rent);
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("-----------------------------------");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("WYNAJMUJĄCY: ");
-            Console.WriteLine("RODZAJ POJAZDU: ");
-            Console.WriteLine("RODZAJ PALIWA: " + answer_fuel);
-            Console.WriteLine("SEGMENT: " + answer_seg);
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("-----------------------------------");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("DATA ZWROTU POJAZDU: " + date_rent.AddDays(time_rent));
-
-            Console.WriteLine("OPŁATA: ");
-            Console.ForegroundColor = ConsoleColor.White;
+            foreach (var y1 in AllClients)
+                foreach (var y2 in AllCars)
+                {
+                    if (answer_id == y1.Id && answer_seg == y2.Segment && answer_fuel == y2.FuelType)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("UMOWA WYNAJMU POJAZDU");
+                        Console.WriteLine("DATA ZAWARCIA: " + date_rent);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("-----------------------------------");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("WYNAJMUJĄCY: " + y1.FullName);
+                        Console.WriteLine("RODZAJ POJAZDU: " + y2.Marka);
+                        Console.WriteLine("RODZAJ PALIWA: " + answer_fuel);
+                        Console.WriteLine("SEGMENT: " + answer_seg);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("-----------------------------------");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("DATA ZWROTU POJAZDU: " + date_rent.AddDays(time_rent));
+                        Console.WriteLine("OPŁATA: " + (y2.Price * time_rent));
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
         }
         DateTime date_rent = DateTime.Now;
         public List<Car> AllCars { get; set; }

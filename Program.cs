@@ -66,6 +66,9 @@ while (true)
 
                 }
             }
+    }
+    else if (message.answer == "3")
+    {
         break;
 
     }
