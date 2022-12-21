@@ -17,6 +17,7 @@ while (true)
 
 
         foreach (var y in message.AllClients)
+        {
 
             if (message.answer_id == y.Id)
             {
@@ -56,21 +57,39 @@ while (true)
                         message.TermScreen();
                         if (message.time_rent > 0)
                         {
+
                             message.AgreementScreen();
 
-
                         }
-
-
+                        else
+                        {
+                            message.Screen();
+                        }
                     }
-
+                    else
+                    {
+                        message.Screen();
+                    }
+                }
+                else
+                {
+                    message.Screen();
                 }
             }
+            // else if (message.answer_id != y.Id)
+            // {
+            //     message.Screen();
+            // }
+        }
     }
     else if (message.answer == "3")
     {
         break;
 
+    }
+    else
+    {
+        message.Screen();
     }
 }
 

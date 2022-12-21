@@ -96,6 +96,14 @@ namespace Wypozyczalnia
                     }
                 }
         }
+        public void Screen()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("NIEPRAWIDŁOWY SYMWOL");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
         DateTime date_rent = DateTime.Now;
         public List<Car> AllCars { get; set; }
         public List<Client> AllClients { get; set; }
